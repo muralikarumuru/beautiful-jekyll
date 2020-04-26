@@ -1,0 +1,5 @@
+---
+layout: none
+---
+User-agent: *
+Sitemap: https://muralikarumuru.github.io/sitemap.xml

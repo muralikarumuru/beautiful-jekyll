@@ -1,22 +1,22 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: Murali Karumuru
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Murali Karumuru
 
 # Your name to show in the footer
-author: Some Person
+author: Murali Karumuru
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+ #Resources:
+ #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+ #   - Learn markdown: "http://www.markdowntutorial.com/"
+ #   - Author's home: "http://deanattali.com"
 
 # --- Local development options ---
 
@@ -33,7 +33,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/murali_avatar.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: true
@@ -49,17 +49,17 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  rss: true
+  email: "mkarumuru@gmail.com"
+#  facebook: murali.karumuru
+  github: muralikarumuru
+  twitter: muralikarumuru
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: murali-karumuru-850a15123
+  rss: true
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+#  instagram: karumurumurali
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
@@ -77,7 +77,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# url-pretty: "MyWebsite.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -109,10 +109,10 @@ footer-link-col: "#404040"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-164560145-1"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-164560145-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -128,7 +128,7 @@ footer-link-col: "#404040"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "community-5lz25pdzog"
 
 # To use Facebook Comments, fill in a Facebook App ID
 #fb_comment_id: ""
@@ -170,7 +170,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/London"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -263,6 +263,8 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Murali Karumuru
+subtitle: Data Platform Engineer
+date: 2020-04-26 13:30
+last_modified_at: 2020-05-03 16:30
+comments: false
+author:
+  twitter: muralikarumuru
+categories: [About Me]
 ---
+I'm a data platform engineer with focus on building data solutions using azure data platform services.
 
-My name is Inigo Montoya. I have the following qualities:
+I love staying current in technology, knowing something new is always exciting. Solving problems with cutting edge technology is even more exciting. I have worked with SQL Server, Microsoft Business Intelligence stack of technologies and I have been strongly focusing on azure data platform services for the last few years.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I watch movies or read books in _my_ free time. I do occasionally share my personal views via my personal blog.
