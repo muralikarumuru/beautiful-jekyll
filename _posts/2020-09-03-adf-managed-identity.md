@@ -10,11 +10,12 @@ tags: [data factory, managed identity]
 categories: azure
 ---
 
-Securing credentials for the azure resources is one the most common challenges. Moving away from passwords is the preferred way of securing azure resources. Authenticating azure resources with credentials can be eliminated by using managed identities.
+Securing credentials for the azure resources is a common challenge. Moving away from passwords is the preferred way of securing azure resources. Authenticating azure resources with credentials can be eliminated by using managed identities.
 
 In this article, I would like to show you implementing a password-less authentication to azure sql database from azure data factory using the managed identity.
 
-An identity for azure data factory is automatically created in azure active directory when the data factory resource is provisioned via azure portal or powershell. if you are provisioning data factory via azure resource manager template (ARM) then you must add identity type in the ARM template as shown below.  `"identity": {
+An identity for azure data factory is automatically created in azure active directory when the data factory resource is provisioned via azure portal or powershell. if you are provisioning data factory via azure resource manager template (ARM) then you must add identity type in the ARM template as shown below.  
+`"identity": {
         "type": "SystemAssigned"
     }`
 
@@ -34,4 +35,4 @@ Create a linked service for your azure sql database as shown below to verify the
 
 We have successfully connected to azure sql database from azure data factory using managed identity.
 
-I hope this article helped you to understand how to create a password-less connection to azure sql database from the data factory. The data factory identity can also be used to connect other azure resources that supports active directory authentication.
+I hope this article helped you to understand how to create a password-less connection (linked service) to azure sql database from the data factory. The data factory identity can also be used to connect other azure resources that supports active directory authentication.
