@@ -49,13 +49,13 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "mkarumuru@gmail.com"
+#  email: "mkarumuru@gmail.com"
 #  facebook: murali.karumuru
-  github: muralikarumuru
-  twitter: muralikarumuru
+#  github: muralikarumuru
+#  twitter: muralikarumuru
 #  reddit: yourname
-  linkedin: muralikarumuru
-  rss: true
+#  linkedin: muralikarumuru
+#  rss: true
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -72,7 +72,7 @@ social-network-links:
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+#  facebook: true
   linkedin: true
 
 # How to display the link to your website in the footer
