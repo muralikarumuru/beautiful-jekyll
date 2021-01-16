@@ -2,8 +2,7 @@
 layout: post
 title: Revoking shared access signature
 subtitle: using stored access policy
-author:
-  twitter: muralikarumuru
+author: muralikarumuru
 date: 2020-05-27 19:30
 last_modified_at: 2020-05-27 19:30
 comments: true
