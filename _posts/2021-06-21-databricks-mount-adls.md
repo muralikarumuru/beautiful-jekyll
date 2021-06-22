@@ -30,7 +30,8 @@ Azure databricks workspace users can securely and easily access azure data lake 
 ![appregdetails](../img/blog/databricksmountadls/5.1-appreg-details.PNG) 
 ![copyclientid](../img/blog/databricksmountadls/5.2-appreg-details.PNG)
 
-**Step 3: Save secrets to azure key vault** 
+**Step 3: Save secrets to azure key vault**
+
 3.1 Add the client ID copied in the step# 2 to the azure key vault
 3.2 Add the tenant ID copied in the step# 2 to the azure key vault
 3.3 Add the client secret created in the step# 1 to the azure key vault 
@@ -44,9 +45,11 @@ Azure databricks workspace users can securely and easily access azure data lake 
 **Step 4: Copy and save azure key vault URI and resource ID** 
 ![kvuri](../img/blog/databricksmountadls/6.4-kv-uri--resourceid.PNG)
 
-**Step 5: Create key vault-backed secret scope in azure databricks UI** 
+**Step 5: Create key vault-backed secret scope in azure databricks UI**
+
 5.1 open azure databricks service from azure portal and copy the databricks service url 
-![adbwspaceurl](../img/blog/databricksmountadls/7-adb-url.PNG) 
+![adbwspaceurl](../img/blog/databricksmountadls/7-adb-url.PNG)
+
 5.2 append /#secrets/createScope to the azure databricks workspace url in a new browser window to create a secret scope 
 ![adbwspaceurlcreatescope](../img/blog/databricksmountadls/7.1-create_adb-secret_scope.PNG) 
 - enter a scope name
@@ -55,7 +58,8 @@ Azure databricks workspace users can securely and easily access azure data lake 
 - ener the azure key vault resource ID copied in step# 4 in the Resource ID
 - click create
 
-**Step 6: Assign azure role to the azure AD application** 
+**Step 6: Assign azure role to the azure AD application**
+
 Assign the **Storage Blob Data Contributor** role to the azure AD application created in step#1. Refer to [Role-based access control (Azure RBAC)](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control-model#role-based-access-control-azure-rbac) to learn more about the azure built-in roles to access storage resources. 
 ![assignrole](../img/blog/databricksmountadls/8-adls-iam.PNG)
 
@@ -93,4 +97,4 @@ Let's write sample data to adls using the mount point.
 Let's read data from adls using the mount point. 
 ![write-data-adls](../img/blog/databricksmountadls/10-read-data-adls.PNG)
 
-Congratulations!!! you have successfully created mount point to securely and easily access data from azure data lake storage.
+Congratulations!!! you have successfully created a mount point to securely and easily access the data from azure data lake storage.
