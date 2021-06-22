@@ -44,7 +44,7 @@ Azure databricks workspace users can securely and easily access azure data lake 
 **Step 4: Copy and save azure key vault URI and resource ID** 
 ![kvuri](../img/blog/databricksmountadls/6.4-kv-uri--resourceid.PNG)
 
-**Step 5: Create key vault-backed secret scope in azure databricks UI**
+**Step 5: Create key vault-backed secret scope in azure databricks UI** 
 5.1 open azure databricks service from azure portal and copy the databricks service url 
 ![adbwspaceurl](../img/blog/databricksmountadls/7-adb-url.PNG)
 5.2 append /#secrets/createScope to the azure databricks workspace url in a new browser window to create a secret scope 
@@ -55,11 +55,11 @@ Azure databricks workspace users can securely and easily access azure data lake 
 - ener the azure key vault resource ID copied in step# 4 in the Resource ID
 - click create
 
-**Step 6: Assign azure role to the azure AD application**
+**Step 6: Assign azure role to the azure AD application** 
 Assign the **Storage Blob Data Contributor** role to the azure AD application created in step#1. Refer to [Role-based access control (Azure RBAC)](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control-model#role-based-access-control-azure-rbac) to learn more about the azure built-in roles to access storage resources. 
 ![assignrole](../img/blog/databricksmountadls/8-adls-iam.PNG)
 
-**Step 7: Mount azure data lake storage in azure databricks**
+**Step 7: Mount azure data lake storage in azure databricks**  
 if you have completed all the previous steps successfully then get ready to complete the final step to create a mount point to access azure data lake storage from the azure databricks.
 - Create a container named as sample-datasets in azure data lake storage account
 - Create a python notebook in azure databricks and copy the below code to create a mount point
