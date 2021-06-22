@@ -19,15 +19,15 @@ Azure databricks workspace users can securely and easily access azure data lake 
 4. Azure databricks (standard plan or premium plan)
 
 **Step 1: Register application with azure active directory** 
-![registerapp1](../img/blog/databricksmountadls/1-register-app.PNG)
-![registerapp2](../img/blog/databricksmountadls/2-register-app.PNG)
-![createclientsecret](../img/blog/databricksmountadls/3-create-secret.PNG)
+![registerapp1](../img/blog/databricksmountadls/1-register-app.PNG) 
+![registerapp2](../img/blog/databricksmountadls/2-register-app.PNG) 
+![createclientsecret](../img/blog/databricksmountadls/3-create-secret.PNG) 
 ![savesecret](../img/blog/databricksmountadls/4-save-secret.PNG)
 
 **Imp note:** Don't forget to copy and save the client secret value which we will be adding to the azure key vault
 
 **Step 2: Copy and save client ID and tenant ID** 
-![appregdetails](../img/blog/databricksmountadls/5.1-appreg-details.PNG)
+![appregdetails](../img/blog/databricksmountadls/5.1-appreg-details.PNG) 
 ![copyclientid](../img/blog/databricksmountadls/5.2-appreg-details.PNG)
 
 **Step 3: Save secrets to azure key vault** 
@@ -35,7 +35,7 @@ Azure databricks workspace users can securely and easily access azure data lake 
 3.2 Add the tenant ID copied in the step# 2 to the azure key vault
 3.3 Add the client secret created in the step# 1 to the azure key vault 
 
-![kvaddsecret1](../img/blog/databricksmountadls/6.1-kv_create-secret.PNG)
+![kvaddsecret1](../img/blog/databricksmountadls/6.1-kv_create-secret.PNG) 
 ![kvaddsecret1](../img/blog/databricksmountadls/6.2-kv_create-secret.PNG)
 
 3.4 Verify the list of secrets added to the key vault before proceeding to the next step 
@@ -46,9 +46,9 @@ Azure databricks workspace users can securely and easily access azure data lake 
 
 **Step 5: Create key vault-backed secret scope in azure databricks UI** 
 5.1 open azure databricks service from azure portal and copy the databricks service url 
-![adbwspaceurl](../img/blog/databricksmountadls/7-adb-url.PNG)
+![adbwspaceurl](../img/blog/databricksmountadls/7-adb-url.PNG) 
 5.2 append /#secrets/createScope to the azure databricks workspace url in a new browser window to create a secret scope 
-![adbwspaceurlcreatescope](../img/blog/databricksmountadls/7.1-create_adb-secret_scope.PNG)
+![adbwspaceurlcreatescope](../img/blog/databricksmountadls/7.1-create_adb-secret_scope.PNG) 
 - enter a scope name
 - select All users from the Manage Principal drop down if your azure databricks workspace is standard tier.
 - enter the azure key vault URI copied in step# 4 in the DNS Name
