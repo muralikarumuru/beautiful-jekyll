@@ -33,7 +33,9 @@ Azure databricks workspace users can securely and easily access azure data lake 
 **Step 3: Save secrets to azure key vault**
 
 3.1 Add the client ID copied in the step# 2 to the azure key vault
+
 3.2 Add the tenant ID copied in the step# 2 to the azure key vault
+
 3.3 Add the client secret created in the step# 1 to the azure key vault 
 
 ![kvaddsecret1](../img/blog/databricksmountadls/6.1-kv_create-secret.PNG) 
