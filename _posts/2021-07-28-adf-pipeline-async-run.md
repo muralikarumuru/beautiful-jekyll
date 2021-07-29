@@ -19,6 +19,7 @@ We are going to use data factory [web activity](https://docs.microsoft.com/en-us
 
 Let's dive into the action. Create two pipelines namely pipline_X and pipeline_Y. Pipeline_X contains a web activity and pipeline_Y contains a wait activity for the purpose of the demonstration.  
 The following screenshots walk you through steps for creating two pipelines to demonstrate the asynchronous execution of pipeline_Y from pipeline_X.  
+
 **Step 1**: Assign data factory contributor role to the same data factory. Yes, this step is required even though both pipeline are in the same data factory. Open your data factory Access control blade and assign the data factory contributor role as shown below.  
 ![assignrole](../img/blog/adfpipeline_async_run/1-adf-role-assignment.PNG)
 
@@ -28,7 +29,8 @@ The following screenshots walk you through steps for creating two pipelines to d
 
 **pipeline_X**:  
 ![pipeline_X_general](../img/blog/adfpipeline_async_run/3-pipeline_X_general.PNG)  
-![pipeline_X_settings](../img/blog/adfpipeline_async_run/3-pipeline_X_settings.PNG) 
+![pipeline_X_settings](../img/blog/adfpipeline_async_run/3-pipeline_X_settings.PNG)  
+
 The URL in the above settings is the REST endpoint for [CrereRun](https://docs.microsoft.com/en-us/rest/api/datafactory/pipelines/create-run) API. Replace {pipelinename} with pipeline_Y and other values appropriately.
 
 **Step 3**: Run the master pipeline i.e pipeline_X  
