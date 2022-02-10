@@ -8,8 +8,6 @@ comments: false
 author: muralikarumuru
 categories: [About Me]
 ---
-I'm a data architect with strong focus on modern data engineering solutions using azure data platform services to translate data into valuable insights. I design and build different types of data models to fulfil data needs of the various business areas.
+I'm an experienced, hands-on data architect and data engineering lead with strong focus on modern data engineering solutions using azure data platform services to translate data into valuable insights. I design and build data models to fulfil data needs of the various business areas. I have helped clients to deliver business intelligence solutions in supply chain domain and cloud data analytics solutions in airlines sector.
 
-I occasionally blog here about the technologies I'm working on and learning experience. I enjoy reading books in my free time.
-
-I live with my family in Hyderabad, India but we are currently in United Kingdom for a work assignment.
+I occasionally blog about the technologies I'm working on and learning experience. Away from the computer, I enjoy reading books and likes to be in the fresh air.
